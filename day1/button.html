@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 실습</title>
+    <style>
+  body{
+    background-color: #000144;
+  }
+
+
+ul {
+    display: flex;
+    margin: 50px 0;
+}
+
+
+li{
+    list-style: none;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 16px 100px;
+    border:  1px solid transparent;
+    margin-right: 16px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 1px;
+    background-color: aqua;
+    transition: 0.4S;
+}
+
+
+.btn:hover::before{
+    width: 100%;
+
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0%;
+    bottom: 0;
+    height: 1px;
+    background-color: aqua;
+    transition: 0.4S;
+
+}
+
+.btn:hover::after{
+    width: 100%;
+
+}
+
+
+.btn:hover{
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+  <ul>
+    <li>
+        <a href="#" class="btn" >about</a>
+    </li>
+    <li>
+        <a href="#" class="btn">contact</a>
+    </li>
+    <li>
+        <a href="#" class="btn">mail</a>
+    </li>
+  </ul>
+</body>
+</html>
