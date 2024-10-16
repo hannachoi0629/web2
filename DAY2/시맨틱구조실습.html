@@ -6,46 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 시맨틱 구조 실습 </title>
     <style>
-        .logo {
-            display: flex;
+        header {
             width: 100%;
-            height: 80px;
+            height: 60px;
+            display: flex;
             background-color: steelblue;
-            color: white;
-            font-size: 30px;
-            font-weight: bolder;
-            margin-left: 0;
+            justify-content: space-between;
+            color: #fff;
+            padding: 10 30px;
+
+        }
+
+
+        body {
+            margin: 0;
             padding: 0;
         }
-        
-        .div_box {
-        
-            display: flex; 
+
+
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+            margin-left: 16px;
         }
 
-        ul {
+        /* .div_box {
             display: flex;
-            list-style: none;
         }
 
-        a {
+        .div_box > li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .div_box > li > a {
             text-decoration: none;
             color: white;
+        } */
 
+        .singing>button {
+            padding: 5px;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            /* margin-right: 0 20px; */
+            margin: 10px;
+
+        }
+
+        .singing>button>a {
+            text-decoration: none;
+            color: dimgray;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 900;
         }
 
 
 
-        footer {
-
-            width: 100%;
-            height: 80px;
-            background-color: steelblue;
-            color: white;
-            font-size: 30px;
-            font-weight: bolder;
-            text-align: center;
-
+        main {
+            margin: 30px;
         }
 
 
@@ -64,11 +84,25 @@
         .flex {
             display: flex;
         }
-
-
-
+        
+        
         .aside_box {
-            width: 30%;
+            width: 10%;
+        }
+
+        section {
+            font-size: 10px;
+        }
+
+        footer {
+
+            height: 100px;
+            background-color: steelblue;
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+
         }
     </style>
 </head>
@@ -76,14 +110,19 @@
 <body>
 
     <header>
-        <h2 class="logo">LOGO</h2>
-        <div class="div_box">
-            <ul>
-                <li><a href="#">메뉴</a></li>
-                <li><a href="#">메뉴</a></li>
-                <li><a href="#">메뉴</a></li>
-            </ul>
+        <div class="logo">LOGO</div>
+        <div class="singing">
+            <button>
+                <a href=""> 메뉴</a>
+            </button>
+            <button>
+                <a href="">메뉴</a>
+            </button>
+            <button>
+                <a href="">메뉴</a>
+            </button>
         </div>
+
     </header>
     <div class="flex">
         <main>
@@ -96,7 +135,7 @@
                     rum, voluptatum animi ad?</p>
             </article>
             <article class="chung">
-                <h2>충격!!!</h2>
+                <h2>으아아아악</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Iste eius recusandae
                     dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
@@ -104,7 +143,7 @@
                     rum, voluptatum animi ad?</p>
             </article>
             <article class="chung">
-                <h2>충격!!!</h2>
+                <h2>충격!!!과 공 포</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Iste eius recusandae
                     dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
@@ -112,7 +151,7 @@
                     rum, voluptatum animi ad?</p>
             </article>
             <article class="chung">
-                <h2>충격!!!</h2>
+                <h2>으아아악 고통!!!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Iste eius recusandae
                     dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
@@ -120,7 +159,7 @@
                     rum, voluptatum animi ad?</p>
             </article>
             <article class="chung">
-                <h2>충격!!!</h2>
+                <h2>웨취</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Iste eius recusandae
                     dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
@@ -128,7 +167,7 @@
                     rum, voluptatum animi ad?</p>
             </article>
             <article class="chung">
-                <h2>충격!!!</h2>
+                <h2>어머!!!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Iste eius recusandae
                     dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
@@ -143,7 +182,7 @@
                 e odio corporis ut modi architecto expedita, ipsam evenie
                 t provident minima assumenda quo? Harum
                 , autem numquam.</p>
-                <section>울랄라</section>
+            <section>전화주세요 삐삡</section>
         </aside>
     </div>
 
