@@ -7,22 +7,9 @@
     <style>
     section{
             display: flex;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 40%;
-            left: 50%;
         }
         
 
-        .dada{
-            color: rgb(255, 255, 255);
-            position: relative;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            
-        }
         
         
         a{
@@ -32,11 +19,11 @@
             
             
         }
-
+        
         .dada > h2 {
             font-size: 40px;
             font-weight: bolder;
-           
+            
         }
         
         
@@ -44,16 +31,40 @@
             display: flex;
             transform: scale(0.7);
             position: relative;
-          
+            
         }
-
+        
         .lolol{
             margin: 20px;
+            overflow: hidden;
+            /* overflow:hidden 은 이미지 크기 (또는 내가 설정한 크기)
+             이상으로 늘려지게 된다면
+            안보이게 만드는 것  */
+            position: relative;
+        }
+        
+        .dada{
+            color: rgb(255, 255, 255);
+            /* position: relative; */
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            position: absolute;
+            z-index: 99;
+            /* z-index 는 일종의 레이어 순서를 맨 앞으로 보내는 기능
+            *숫자가 클수록 앞으로 감 */
         }
 
+        img{
+            transition: 0.5s;
+        }
+
+        /* 이미지를 뗄때도 부드럽게 하고 싶으면 이미지 자체에
+        트랜지션을 넣으면 됨 */
 
         .lolol img:hover{
-            transform:scale(0.5);
+            transform:scale(1.1);
             transition: 0.5s;
           
         }
