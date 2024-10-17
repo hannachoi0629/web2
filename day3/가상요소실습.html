@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 실습</title>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            width: 200px;
+            display: inline-block;
+            margin: 16px;
+            font-size: 20px;
+            height: 150px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }
+
+        a>span:first-child {
+            font-size: 25px;
+            font-weight: bolder;
+
+        }
+
+        a>span:last-child {
+            color: blue;
+            opacity: 0;
+            transition: 0.7s;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span>html</span>
+                    <span>markup</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>css</span>
+                    <span>style</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>java</span>
+                    <span>coding</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>uxui</span>
+                    <span>dsing</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>port</span>
+                    <span>omg</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
