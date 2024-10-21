@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드실습2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+        }
+        
+        li {
+            list-style: none;
+            background-color: rgb(224, 170, 158);
+            width: 450px;
+            height: 300px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .text_box {
+            padding: 16px;
+        }
+
+        .img_box {
+            transform: translateY(20px);
+            margin-left: 60px;
+            transition: 0.3s;
+        }
+
+        li:hover .img_box {
+            transform: translateY(-15px);
+        }
+
+        /* .img_box > img { */
+        /* transform: rotate(90deg);    } */
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>
+                <div class="text_box">
+                    <h2>10+</h2>
+                    <p>10가지의 다양한 반찬 제공으로<br>
+                        한끼의 식사도 정성스럽게
+                    </p>
+                </div>
+                <div class="img_box">
+                    <img src="./이미지실습2.png" alt="한샘도시락">
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

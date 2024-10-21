@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드 실습1</title>
+    <script src="https://kit.fontawesome.com/c54ed1577d.js" crossorigin="anonymous"></script>
+    <style>
+
+@font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+       
+
+        li {
+            list-style: none;
+            background-color: rgb(140, 161, 96);
+            border-radius: 25px;
+            width: 500px;
+
+        }
+
+
+        .text_area {
+            padding: 24px;
+        }
+
+        .text_area > p {
+            font-family: 'NanumSquareNeoBold';
+            font-size: 24px;
+        }
+
+        .flex_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32spx;
+        }
+
+        .flex_box > h2 {
+            font-size: 16px;
+            font-family: 'NanumSquareNeoLight';
+
+        }
+
+        .flex_box > a {
+            background-color: white;
+            display: block;
+            width: 45px;
+            height: 45px;
+            border-radius: 24px;
+            text-align: center;
+            line-height: 45px;
+            color: #000;
+        }
+
+        .flex_box > a > i {
+            transform: rotate(45deg);
+        }
+
+        figure {
+            width: 100%;
+            height: 250px;
+            border-radius: 25px;
+            background: url(./이미지실습.png);
+            /* 백그라운드- 이미지에 이미지 넣는 법 url 을 넣는다 */
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <ui>
+            <li>
+                <div class="text_area">
+                    <div class="flex_box">
+                        <h2>위탁급식시스템</h2>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up fa-xl"></i>
+                        </a>
+                    </div>
+                    <p>
+                        급식업무 일체를 위임 받아
+                        <br>
+                        체계적으로 운영하는 전문
+                        급식 서비스
+                    </p>
+                </div>
+                <figure>
+                    
+                </figure>
+            </li>
+        </ui>
+    </section>
+</body>
+
+</html>
