@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>흔들리는 버튼 실습</title>
+    <style>
+        .ani_btn {
+            padding: 10px 16px;
+            background-color: skyblue;
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            margin: 50px ;
+        }
+
+        .ani_btn:hover {
+            animation-name: ani_btn ;
+            animation-duration: 0.6s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes ani_btn {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            50% {
+                transform: rotate(25deg);
+            }
+
+            100% {
+                transform: rotate(-10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="ani_btn">
+            호버시 흔들립니다.
+        </button>
+    </div>
+    
+</body>
+</html>
