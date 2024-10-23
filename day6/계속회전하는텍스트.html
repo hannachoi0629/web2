@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계속돌아가는 텍스트</title>
+    <style>
+
+        section {
+            overflow: hidden;
+            /* 밑에 바 없앨때도 쓸 수 있음 */
+        }
+        .animation_text {
+            width: max-content;
+            /* html 요소의 너비를 최대한 늘리고 싶을때 사용 */
+            /* 최대 너비는 안에 담고있느니 콘텐츠의 길이의 따라
+            좌우된다 */
+            /* 텍스트 컨텐츠의 경우 줄바꿈을 하지 않으면 문장의 길이가 길어진다 */
+            /* 자식요소가 부모요소를 삐져나가서 콘텐츠 만큼의 영역을 차지하게됨 */
+            font-size: 100px;
+        }
+
+        .animation_text {
+
+            animation-name: animation_text;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+
+        .animation_text2 {
+
+            animation-name: animation_text2;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .animation_text2 {
+            width: max-content;
+            font-size: 100px;
+
+        }
+
+        
+
+        @keyframes animation_text {
+            0% {
+                transform: translate(0);
+            }
+
+            100% {
+                transform: translate(-50%);
+            }
+        }
+
+
+        @keyframes animation_text2 {
+            0% {
+                transform: translate(-50%);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        /* animation-direction:recvers; 로 간결하게 해도 됨  */
+
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <div class="animation_text">
+            <p>Lorem ipsum dolor sitg,vero! Labore cupiditate delenitiLorem ipsum dolor sitg,vero! Labore cupiditate
+                deleniti </p>
+        </div>
+        <div class="animation_text2">
+            <p>Lorem ipsum dolor sitg,vero! Labore cupiditate delenitiLorem ipsum dolor sitg,vero! Labore cupiditate
+                deleniti</p>
+            
+        </div>
+
+    </section>
+</body>
+
+</html>
