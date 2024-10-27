@@ -12,49 +12,64 @@
 
         section {
            
+            margin: 50px;
+            padding: 50px;
+            align-content: center;
         }
-
-        button {
-           background-color: steelblue;
-           color: white;
-           width: 200px;
-           height: 50px; 
-           
-
-           
-        }
-
-
-        button:focus {
-            animation-timing-function: cubic-bezier(1,0.5,3,4);
-            animation: catani 2s linear 1 ;
-
-        }
-
         
-
-
+        button {
+            background-color: steelblue;
+            color: white;
+            width: 200px;
+            height: 50px; 
+            margin: 20px;
+            
+            
+        }
+        
+        
+        button:focus ~ ul li { 
+            position: relative;
+            animation: catani 3s forwards;
+            animation-timing-function: cubic-bezier(1, 0.5, 0.21, 0.14);
+            
+        }
+        
+        @keyframes catani {
+            from {
+                left: -100%;
+            }
+            
+            to {
+                
+                left: 0;
+            }
+        }
+        
+        
+        
         ul {
             display: flex;
             width: 1200px;
             margin: 0 auto;
-            /* overflow: hidden; ??? */
+            overflow: hidden;
         }
-
+        
         li {
-
+            
             /* 위쓰가 1200인데 사진을 4개 뛰울꺼니까 나누기 한 값에 넣고싶은 
             마진 값을 뺀 것으로 민 위쓰를 넣는다 */
             min-width: 268px;
             height: 150px;
             list-style: none;
+            position: relative;
 
         }
 
         
 
         li:nth-child(1) {
-            background: url(./1.png);
+            background: url(./1.jpg);
             background-size: cover;
         }
 
@@ -84,7 +99,7 @@
         }
 
         li:nth-child(7) {
-            background: url(./7.webp);
+            background: url(./7.jpg);
             background-size: cover;
         }
 
@@ -93,25 +108,29 @@
             background-size: cover;
         }
 
-        @keyframesy catani {
 
-        }
+           
+           
+
+
     </style>
 </head>
 <body>
 
     <section>
-        <button>고양이 버튼</button>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div>
+            <button>고양이 버튼</button>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 
     </section>
     
