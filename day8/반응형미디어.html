@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형미디어</title>
+    <style>
+        .pc_media {
+            width: 300px;
+            height: 300px;
+            background-color: royalblue;
+        }
+
+
+        .mo_media {
+            width: 100%;
+            height: 300px;
+            background-color: rosybrown;
+        }
+
+        .mo_pc_media {
+            width: 500px;
+            height: 500px;
+            background-color: tomato;
+        }
+
+        @media (max-width: 1024px) {
+
+            .pc_media {
+
+                /* 가장 기본적인 사용법 */
+                /* 맥스 위스란 맥스 위스로 설정한 값이 최대값이라는 뜻
+                즉 맥스위스 1024px은 1024보다 작은 화면을 뜻한다 
+                1024가 최대값이라고 선언했으니 해당코드는 1024보다 작을 때 작동*/     
+                width: 100%;
+
+            }
+            body {
+             padding: 0 32px;    
+            }
+            
+        }
+
+
+        @media  (max-width: 360px) {
+           
+            body {
+            
+                padding: 0 16px;
+                
+            }
+        }
+
+
+
+        @media (min-width: 360px) {
+
+            /* 민 위스는 맥스 위스랑 반대의 개념으로 맥스 위스가 지정한 값이
+            최대값이여서 브라우정;ㅢ 사이즈가 작을 때 작동하는 반면에
+            민위스는 최소값을 지정해준거라서 우리가 지정한 최소값보다 클쨰 작동한다 */
+            /* 민위스/맥스위스 개념 중요! */
+            .mo_media {
+                width: 100%;
+                height: 300px;
+                background-color: aqua;
+            }
+        }
+
+        @media (min-width: 360px) {
+            .mo_media {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+
+        @media(min-width: 360px) and (max-width: 760px) {
+            .mo_pc_media{
+                background-color: orchid;
+                width: 100%;
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <div class="pc_media"></div>
+
+    <div class="mo_media"></div>
+
+    <div class="mo_pc_media"></div>
+    
+</body>
+</html>

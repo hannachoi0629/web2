@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 정답</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            margin: 50px auto;
+            /*  가운데로 위치하게 됨 */
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            background-color: seagreen;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            /* 버튼에 마우스를 올리면 포인터로 바뀜 */
+        }
+
+
+
+        button:focus + ul li {
+            /* 인접 선택자를 위에 + 를 넣어야 작동한다. */
+            animation: slide 2s forwards;
+        }
+
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+
+        li {
+            list-style: none;
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            animation-timing-function:cubic-bezier(0.91,-0.22, 0.57, 1.19) ;
+            /* 임의로 먼저  라이너를 선택하고 검사에서 펑션 눌르기 */
+        }
+
+        li:nth-child(1) {
+            background: url(./1.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background: url(./2.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background: url(./3.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background: url(./4.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(5) {
+            background: url(./5.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(6) {
+            background: url(./6.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(7) {
+            background: url(./7.jpg);
+            background-size: cover;
+        }
+
+        li:nth-child(8) {
+            background: url(./8.jpg);
+            background-size: cover;
+        }
+
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-1200px);
+            }
+
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <button> 고야잉</button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

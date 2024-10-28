@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 실습</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 24px;
+            display: none;
+            /* 논하면 없어짐 */
+        }
+
+        .box:nth-child(1) {
+            background-color: yellow;
+            
+        }
+
+        @media (min-width: 1280px) {
+            .box:nth-child(1) {
+                width: 100%;
+                background-color: rgb(109, 255, 255);
+                display: block;
+                /* 블록하면 보임 */
+            }
+        }
+
+
+        @media (min-width: 760px) and (max-width:1280px) {
+            .box:nth-child(2) {
+                width: 100%;
+                background-color: rgb(139, 139, 255);
+                display: block;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .box:nth-child(3) {
+                width: 100%;
+                background-color: yellowgreen;
+                display: block;
+            }
+
+        }
+
+        @media (max-width: 360px) {
+            .box:nth-child(3) {
+                display: none;
+            }
+            /* none 해서 사라지게 함 */
+
+            .box:nth-child(4) {
+                width: 100%;
+                background-color: rgb(123, 255, 189);
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            저는 브라우저 크기의100%를 차지하고 브라우저가1280까지 줄어들면 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저 크기가760보다 크고1280보다 작으면 나타나요
+        </div>
+        <div class="box">
+            저는 브라우저 크기가 760px이하일때 나타나고 360px보다 작을때 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저 크기가 360px 이하일때 나타나요.
+        </div>
+    </section>
+</body>
+
+</html>
