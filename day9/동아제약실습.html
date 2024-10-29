@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약 반응형 실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            background-color: yellowgreen;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            
+            
+        }
+        
+        
+        .list1 {
+            list-style: none;
+            display: flex;
+            margin: 10px;
+        }
+
+        .list1 > li {
+            margin: 5px;
+            font-size: 10px;
+        }
+
+        input {
+            border-radius: 25px;
+            width: 100px;
+            height: 20px;
+           
+        }
+
+
+        @media (max-width: 760px) {
+            section{
+                background-color: blue;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+   <header>
+        <section>
+            <h1>동아제약</h1>
+            <ul class="list1">
+                <li>회사소개</li>
+                <li>브랜드</li>
+                <li>R&B</li>
+                <li>정도경영</li>
+                <li>뉴스룸</li>
+                <li>인재채용</li>
+                <li>고객지원</li>
+            </ul>
+            <input type="text">
+        </section>
+        <div>
+            <ul class="list2">
+                <li>준법경영</li>
+                <li>판매약국찾기</li>
+                <li>감사제보하기</li>
+            </ul>
+        </div>
+   </header>
+
+
+    
+</body>
+</html>

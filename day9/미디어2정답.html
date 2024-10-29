@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 실습2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        ul {
+
+            display: flex;
+            justify-content: center;
+            /* 저스타파이는 디스플레이 플랙스가 필요함 */
+            /* 위스값을 주고 마진 에 오토를 넣으면 가운데로 감 */
+        }
+
+        li {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin: 16px;
+            list-style: none;
+        }
+
+        @media (max-width: 1400px) {
+            ul {
+                flex-wrap: wrap;
+                /* 크기가 줄어들면 밑으로 내려감 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+
+</html>
