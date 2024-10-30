@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오헤더</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .pc_header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #000;
+            margin: 20px;
+            align-items: center;
+
+        }
+
+        .pc_header > h1 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .pc_header > ul {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+        
+        }
+
+        li {
+            margin: 15px;
+            list-style: none;
+        }
+
+
+        .pc_header_bottom {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #000;
+            margin: 20px;
+            align-items: center;
+        }
+
+        .pc_header_bottom ul {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 1025px) {
+            .pc_header>ul>li {
+                display: none;
+            }
+
+            .pc_header>h1 {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+
+        @media (max-width:1225px) {
+            .pc_header > ul {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width:1025px) {
+            .pc_header_bottom> ul> li:nth-child(1) {
+                display: none;
+            }
+
+            .pc_header_bottom> ul> li:nth-child(2) {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="pc_header">
+            <h1>Kakao</h1>
+            <ul>
+                <li>소개</li>
+                <li>이미지</li>
+                <li>기술과 서비스</li>
+                <li>약속과 책임</li>
+                <li>뉴스</li>
+                <li>투자정보</li>
+            </ul>
+        </nav>
+        <div class="pc_header_bottom">
+            <h2>Kakao</h2>
+            <ul>
+                <li>카톡 안녕가이드</li>
+                <li>카톡설명서</li>
+                <li>다운로드</li>
+            </ul>
+        </div>
+
+    </header>
+</body>
+
+</html>
