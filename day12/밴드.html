@@ -1,11 +1,302 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>벤드화면</title>
+    <title>밴드화면</title>
+    <link rel="stylesheet" href="../resetcss.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            width: 100%;
+            height: 60px;
+        }
+
+        h1 {
+
+            width: 78px;
+            height: 29px;
+            background-size: 78px auto;
+            background-image: url(./로고들2.png);
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        .container {
+            margin: 15px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .lang {
+            font-size: 12px;
+        }
+
+
+        .sign {
+            font-size: 15px;
+        }
+
+        .login {
+            background-color: #21c531;
+            border: none;
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        .login>a {
+            color: #fff;
+        }
+
+        .lang,
+        .sign {
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+
+        .lang :hover {
+            text-decoration: underline;
+        }
+
+        .sign :hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .img_box {
+            background: url(./밴드실습사진.jpg);
+            background-size: 540px auto;
+            width: 540px;
+            height: 695px;
+        }
+
+        .text_box {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+
+        .sign2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .text_box>p {
+            color: rgb(92, 92, 92);
+        }
+
+        .sign2>button {
+            border: none;
+            width: 350px;
+            height: 50px;
+            /* 커서 범위 올리는 법 물어보기 */
+        }
+
+
+        .sign2>button:nth-child(1) {
+            background-color: #21c531;
+        }
+
+        .color {
+            color: #fff;
+            font-size: 16px;
+        }
+
+
+
+        .sign2>button:nth-child(2) {
+            background-color: #f1f1f1;
+            font-size: 16px;
+        }
+
+        .text_box>h2 {
+            line-height: 1.2;
+        }
+
+
+        .text_box>p {
+            line-height: 3;
+        }
+
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .find_box {
+            line-height: 2;
+            font-size: 12px;
+        }
+
+        .find_box>a {
+            text-decoration: underline;
+            color: #21c531;
+            font-weight: bolder;
+        }
+
+        .img_box2 {
+            position: relative;
+            display: flex;
+            height: 540px;
+            background: url(./중간이미지.jpg) 50% 50% no-repeat;
+            background-size: cover;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text_box2>h3 {
+            font-size: 40px;
+            color: #fff;
+            line-height: 3;
+        }
+
+        .text_box2>p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+
+        .img_box3 {
+            display: flex;
+            margin: 50px;
+            justify-content: center;
+        }
+
+        .text_box3 {
+            list-style: none;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .text_box3>h3 {
+            line-height: 2;
+            font-size: 24px;
+        }
+
+        .text_box3>p {
+            line-height: 1.5;
+        }
+
+        .text_box3>img {
+            width: 350px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1></h1>
+        <div class="container">
+            <button class="lang">
+                <a href="#">한국어</a>
+            </button>
+            <button class="sign">
+                <a href="#">회원가입</a>
+            </button>
+
+            <button class="login">
+                <a href="#">로그인</a>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="img_box"></div>
+            <div class="text_box">
+                <h2>모임이 쉬워진다! <br> 우리끼리 밴드</h2>
+                <p>당신의 모임도 BAND로 시작하세요.</p>
+                <div class="sign2">
+                    <button>
+                        <a href="#" class="color">로그인</a>
+                    </button>
+                    <button>
+                        <a href="#">회원가입</a>
+                    </button>
+                </div>
+                <div class="find_box">
+                    나에게 맞는 밴드를 만나려면
+                    <a href="#">밴드 찾기</a>
+                </div>
+                <div class="find_box">
+                    모임별 밴드 활용법
+                    <a href="#">밴드 가이드 보기</a>
+                </div>
+                <div class="find_box">
+                    만 13세 미만이라면?
+                    <a href="#">'밴드 키즈' 알아보기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="img_box2">
+        <div class="text_box2">
+            <h3>모임을 위한 공간, 밴드</h3>
+            <p>밴드는 그룹 멤버와 함꼐 하는 공간입니다. <br>동호회, 스터디, 주제별 모임을 밴드로 시작하세요.</p>
+        </div>
+    </section>
+
+    <ul class="img_box3">
+        <li class="text_box3">
+            <img src="./하단 이미지 1.jpg" alt="밴드">
+            <h3>어떤 모임이라도!</h3>
+            <p>친구, 가족, 동료 등 함께 하고 싶은 사람과 <br>우리만의 공간을 만들어보세요.</p>
+        </li>
+        <li class="text_box3">
+            <img src="./하단 이미지 2.jpg" alt="모임">
+            <h3>모임에 딱 맞는 기능들</h3>
+            <p>투표로 의견을 모으고, 함께 일정을 공유하며<br>게시판과 앨범에는 추억을 쌓아보세요.</p>
+        </li>
+        <li class="text_box3">
+            <img src="./하단 이미지 3.jpg" alt="찾기">
+            <h3>내가 원하는 모임 찾기</h3>
+            <p>취미, 스포츠, 또래 모임 등<br>나와 같은 관심사 밴드를 찾을 수 있어요.</p>
+        </li>
+    </ul>
+
+    <div>
+        <ul>
+            <li>
+                <h4></h4>
+                <p></p>
+                
+            </li>
+        
+        </ul>
+    </div>
+
+
 </body>
+
 </html>
