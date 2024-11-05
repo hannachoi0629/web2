@@ -215,16 +215,39 @@
             margin: 0 auto;
         }
 
+        .list_head_start {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .list_head {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+            align-items: center;
+        }
 
         .all_ul_text {
-            display: flex;
+            display: flex ;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            line-height: 1.5;
         }
 
-        section > h4 {
-            font-size: 24px;
-            display: flex;
-            
+        .all_ul_text > ul {
+            margin: 50px;
         }
+
+        
+        
+        .all_ul_text > ul > li > p {
+            font-size: 10px;
+        }
+
     </style>
 </head>
 
@@ -306,46 +329,16 @@
             <p>취미, 스포츠, 또래 모임 등<br>나와 같은 관심사 밴드를 찾을 수 있어요.</p>
         </li>
     </ul>
-    
-    <section>
-       <h4>이런 밴드는 어때요</h4>
+
+    <section class="list_head_start">
+        <div class="list_head">
+            <h3>이런 밴드는 어때요</h3>
+            <a href="#">모두 보기</a>
+        </div>
         <div class="all_ul_text">
             <ul>
                 <li>
-                    <h4>다이어트.걷기.만보인증</h4>
-                    <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                <p>멤버 3,423 . 리더 리더 </p>
-                <button> 다이어트 밴드 더 보기 > </button>
-            </li>
-            <li>
-                <h4>다이어트.걷기.만보인증</h4>
-                <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                <p>멤버 3,423 . 리더 리더 </p>
-                <button> 다이어트 밴드 더 보기 > </button>
-            </li>
-            <li>
-                <h4>다이어트.걷기.만보인증</h4>
-                <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                <p>멤버 3,423 . 리더 리더 </p>
-                <button> 다이어트 밴드 더 보기 > </button>
-            </li>
-            <li>
-                <h4>다이어트.걷기.만보인증</h4>
-                <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                <p>멤버 3,423 . 리더 리더 </p>
-                <button> 다이어트 밴드 더 보기 > </button>
-            </li>
-            <li>
-                <h4>다이어트.걷기.만보인증</h4>
-                <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
-                <p>멤버 3,423 . 리더 리더 </p>
-                <button> 다이어트 밴드 더 보기 > </button>
-            </li>
-        </ul>
-        
-        <div>
-            <ul>
-                <li>
+                    <img src="./너무 어려워잉.jpg" alt="밴드배너">
                     <h4>다이어트.걷기.만보인증</h4>
                     <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
                     <p>멤버 3,423 . 리더 리더 </p>
@@ -376,12 +369,46 @@
                     <button> 다이어트 밴드 더 보기 > </button>
                 </li>
             </ul>
+
+            <div class="all_ul_text">
+                <ul>
+                    <li>
+                        <h4>다이어트.걷기.만보인증</h4>
+                        <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
+                        <p>멤버 3,423 . 리더 리더 </p>
+                        <button> 다이어트 밴드 더 보기 > </button>
+                    </li>
+                    <li>
+                        <h4>다이어트.걷기.만보인증</h4>
+                        <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
+                        <p>멤버 3,423 . 리더 리더 </p>
+                        <button> 다이어트 밴드 더 보기 > </button>
+                    </li>
+                    <li>
+                        <h4>다이어트.걷기.만보인증</h4>
+                        <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
+                        <p>멤버 3,423 . 리더 리더 </p>
+                        <button> 다이어트 밴드 더 보기 > </button>
+                    </li>
+                    <li>
+                        <h4>다이어트.걷기.만보인증</h4>
+                        <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
+                        <p>멤버 3,423 . 리더 리더 </p>
+                        <button> 다이어트 밴드 더 보기 > </button>
+                    </li>
+                    <li>
+                        <h4>다이어트.걷기.만보인증</h4>
+                        <p>매일걷기인증하기.다이어트에 관심있으신분들 환영해요~^^</p>
+                        <p>멤버 3,423 . 리더 리더 </p>
+                        <button> 다이어트 밴드 더 보기 > </button>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-        
-    </div>
-</section>
-    
-    
+    </section>
+
+
 </body>
 
 </html>
