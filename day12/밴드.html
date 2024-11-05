@@ -66,6 +66,11 @@
             background: none;
         }
 
+        .lang > select {
+            border: none;
+            
+        }
+
 
         .lang :hover {
             text-decoration: underline;
@@ -217,7 +222,14 @@
         <h1></h1>
         <div class="container">
             <button class="lang">
-                <a href="#">한국어</a>
+                <!-- <a href="#">한국어</a> -->
+                <select name="한국어" id="#">
+                    <option value="lang">한국어</option>
+                    <option value="lang">日本語</option>
+                    <option value="">Español</option>
+                    <option value="">繁體中文</option>
+                    <option value="">Bahasa Indonesia</option>
+                </select>
             </button>
             <button class="sign">
                 <a href="#">회원가입</a>
