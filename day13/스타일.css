@@ -1,0 +1,379 @@
+body {
+    background: #f6f8fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 16px;
+}
+
+h1 {
+
+    width: 78px;
+    height: 29px;
+    background-size: 78px auto;
+    background-image: url(./로고들2.png);
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.select {
+    background: none;
+    border: none;
+}
+
+.sign {
+
+    font-size: 16PX;
+    padding: 16px;
+}
+
+.login {
+    background-color: #21c531;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.login>a {
+    color: #fff;
+    padding: 16px;
+}
+
+.lang,
+.sign {
+    border: none;
+    background: none;
+}
+
+
+
+.lang:hover {
+    text-decoration: underline;
+}
+
+.sign:hover {
+    text-decoration: underline;
+}
+
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.img_box {
+    background: url(./밴드\ 실습\ 사진.jpg);
+    background-size: 540px auto;
+    width: 540px;
+    height: 695px;
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.sign2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.text_box>p {
+    color: rgb(92, 92, 92);
+}
+
+.sign2>button {
+    border: none;
+    width: 350px;
+    height: 50px;
+    margin-top: 16px;
+
+}
+
+.sign2>button>a {
+    width: 350px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.link_text {
+    margin-top: 16px;
+}
+
+
+.sign2>button:nth-child(1) {
+    background-color: #21c531;
+}
+
+.color {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+.sign2>button:nth-child(2) {
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+.text_box>h2 {
+    line-height: 1.2;
+}
+
+
+.text_box>p {
+    line-height: 3;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+.find_box {
+    line-height: 2;
+    font-size: 12px;
+}
+
+.find_box>a {
+    text-decoration: underline;
+    color: #21c531;
+    font-weight: bolder;
+}
+
+.img_box2 {
+    position: relative;
+    display: flex;
+    height: 540px;
+    background: url(./중간이미지.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_box2>h3 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 3;
+}
+
+.text_box2>p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+.img_box3 {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.text_box3 {
+    list-style: none;
+    margin: 20px;
+    text-align: left;
+}
+
+.text_box3>h3 {
+    line-height: 2;
+    font-size: 24px;
+}
+
+.text_box3>p {
+    line-height: 1.5;
+}
+
+.text_box3>img {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.list_head_start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+.list_head {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.list_head>h3 {
+    font-size: 24px;
+}
+
+.list_head>a {
+    font-size: 14px;
+}
+
+.all_ul_text {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.all_ul_text>ul {
+    margin: 50px;
+    line-height: 2;
+}
+
+.all_ul_text>ul>li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.list_img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+
+.list_container>h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list_container>p {
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+}
+
+.list_container>button {
+    border: none;
+    background-color: snow;
+    border-radius: 20px;
+}
+
+.list_box {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.list_box>li {
+    display: flex;
+    margin: 16px 0;
+}
+
+
+
+.footer_head_start {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 500px;
+
+}
+
+.footer_head {
+    display: flex;
+    align-items: center;
+}
+
+.footer_head_container>h4 {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footer_head_container>p {
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+}
+
+.last_LOGo {
+    width: 70px;
+    height: 70px;
+    background-image: url(./밴드로고.png);
+    background-size: 70px;
+}
+
+.footer_head_container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.last_LOGo_end {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.down_google {
+    width: 160px;
+    height: 47px;
+    background-image: url(./구글.png);
+    background-size: 160px;
+    margin-right: 10px;
+}
+
+.down_apple {
+    background-image: url(./애플.png);
+    width: 160px;
+    height: 47px;
+    background-size: 160px;
+}
+
+
+.last_footer {
+    background-color: #2a3038;
+    width: 100vw;
+    height: 200px;
+}
+
+.last_footer>ul {
+    display: flex;
+    list-style: disc;
+    font-size: 12px;
+}
+
+.last_footer>ul>li {
+    margin: 15px;
+    color: #a0a0a0;
+}
+
+.last_footer>ul>li>a {
+    color: #a0a0a0;
+}
+
+.last_footer>ul>li>a:hover {
+    text-decoration: underline;
+
+}
