@@ -307,10 +307,23 @@
         .footer_head_start {
             display: flex;
             justify-content: space-between;
+            margin: 0 500px;
+
         }
 
         .footer_head {
             display: flex;
+            align-items: center;
+        }
+
+        .footer_head_container>h4 {
+            font-size: 20px;
+            line-height: 2;
+        }
+
+        .footer_head_container>p {
+            font-size: 13px;
+            color: rgb(95, 95, 95);
         }
 
         .last_LOGo {
@@ -318,6 +331,12 @@
             height: 70px;
             background-image: url(./밴드로고.png);
             background-size: 70px;
+        }
+
+        .footer_head_container {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
         }
 
         .last_LOGo_end {
@@ -339,6 +358,33 @@
             width: 160px;
             height: 47px;
             background-size: 160px;
+        }
+
+
+        .last_footer {
+            background-color: #2a3038;
+            width: 100vw;
+            height: 200px;
+        }
+
+        .last_footer>ul {
+            display: flex;
+            list-style: disc;
+            font-size: 12px;
+        }
+
+        .last_footer>ul>li {
+            margin: 15px;
+            color: #a0a0a0;
+        }
+
+        .last_footer>ul>li>a {
+            color: #a0a0a0;
+        }
+
+        .last_footer>ul>li>a:hover {
+            text-decoration: underline;
+
         }
     </style>
 </head>
@@ -557,12 +603,15 @@
         <section class="footer_head_start">
             <div class="footer_head">
                 <h3 class="last_LOGo"></h3>
-                <h4>
-                    밴드앱을 다운로드 하세요!
-                </h4>
-                <p>
-                    당신의 모임도 BAND로 시작하세요.
-                </p>
+                <div class="footer_head_container">
+                    <h4>
+                        밴드앱을 다운로드 하세요!
+                    </h4>
+                    <p>
+                        당신의 모임도 BAND로 시작하세요.
+                    </p>
+
+                </div>
             </div>
             <div class="last_LOGo_end">
                 <div class="down_google">
@@ -572,6 +621,51 @@
                     <a href="#"></a>
                 </div>
             </div>
+        </section>
+        <section class="last_footer">
+            <ul>
+                <li>
+                    <a href="#">블로그</a>
+                </li>
+                <li>
+                    <a href="#">공지사항</a>
+                </li>
+                <li>
+                    <a href="#">스티커제안</a>
+                </li>
+                <li>
+                    <a href="#">광고</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">쿠키설정</a>
+                </li>
+                <li>
+                    <a href="#">CCPA 개인 정보 관리</a>
+                </li>
+                <li>
+                    <a href="#">청소년 보호를 위한 노력</a>
+                </li>
+                <li>
+                    <a href="#">활동정책</a>
+                </li>
+                <li>
+                    <a href="#">권리침해 신고안내</a>
+                </li>
+                <li>
+                    <a href="#">개발자</a>
+                </li>
+                <li>
+                    <a href="#">도움말</a>
+                </li>
+
+            </ul>
+
         </section>
 
 
